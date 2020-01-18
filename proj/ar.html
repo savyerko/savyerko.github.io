@@ -4,6 +4,7 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>GeoAR.js demo</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <script src='https://aframe.io/releases/1.0.0/aframe.min.js'></script>
     <script src="https://raw.githack.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js"></script>
     <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
@@ -14,7 +15,7 @@
 
 <body style='margin: 0; overflow: hidden;'>
     <a-scene vr-mode-ui="enabled: false" embedded arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
-        <a-entity  text = "value: Krasnoyarsk Кировский район; color: #FF0000;" scale = "150 150 1" position = "2 2 1" gps-entity-place="longitude: 92.935055; latitude: 55.992547;"></a-entity>
+        <a-entity class = "univer" text = "value: Krasnoyarsk Кировский район; color: #FF0000;" scale = "150 150 1" position = "2 2 1" gps-entity-place="longitude: 92.935055; latitude: 55.992547;"></a-entity>
         <a-camera gps-camera= "minDistance: 150;" rotation-reader></a-camera>
 	</a-scene>
 </body>
