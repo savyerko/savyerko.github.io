@@ -7,14 +7,16 @@
     <script src='https://aframe.io/releases/1.0.0/aframe.min.js'></script>
     <script src="https://raw.githack.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js"></script>
     <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
-    <script>
-        THREEx.ArToolkitContext.baseURL = 'https://raw.githack.com/jeromeetienne/ar.js/master/three.js/'
-    </script>
+    
 </head>
 
 <body style='margin: 0; overflow: hidden;'>
     <a-scene vr-mode-ui="enabled: false" embedded arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
+<<<<<<< HEAD
         <a-entity gltf-model="scene.gltf" rotation="0 180 0" scale="0.15 0.15 0.15" gps-entity-place="longitude: 92.935131; latitude: 55.992427;" animation-mixer/>
+=======
+        <a-entity gltf-model="scene.gltf" rotation="0 0 0" scale="1 1 1" gps-entity-place="longitude: 92.769426; latitude: 56.004135;"></a-entity>
+>>>>>>> 7155c9477fc9e1446a3b04ff72d9e9e34a536b87
         <a-camera position = "0 0 0" gps-camera ></a-camera>
 	</a-scene>
 </body>
