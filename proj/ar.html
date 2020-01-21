@@ -7,6 +7,7 @@
     <script src='https://aframe.io/releases/1.0.0/aframe.min.js'></script>
     <script src="https://raw.githack.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js"></script>
     <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
+    <script src="https://raw.githack.com/jeromeetienne/AR.js/2.1.4/aframe/build/aframe-ar.js"></script>
     <script>
         THREEx.ArToolkitContext.baseURL = 'https://raw.githack.com/jeromeetienne/ar.js/master/three.js/'
     </script>
@@ -18,8 +19,8 @@
        vr-mode-ui="enabled: false"
         embedded
         arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
-            <a-box position='0 0.5 0' material='color: red;'></a-box>
         <a-marker-camera  type = 'pattern'  url = 'pattern-marker.patt'>
+            <a-box position='0 0.5 0' material='color: red;'></a-box>
         </a-marker-camera>
         <a-camera gps-camera rotation-reader>
         </a-camera>
